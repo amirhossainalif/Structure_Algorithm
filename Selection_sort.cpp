@@ -1,6 +1,7 @@
 #include<iostream>
 #include<conio.h>
 using namespace std;
+
 void Selection_sort(int arr[], int n)
 {
     int check=0,index, p=0;
@@ -29,17 +30,15 @@ void Selection_sort(int arr[], int n)
     {
         cout<<arr[i]<<" ";
     }
-    cout<<endl<<"Number of comparisons = "<<(n*(n-1)/2)-1<<endl;
-    cout<<"Number of exchange = "<<p<<endl;
 }
 
 int main()
 {
     int n;
-    cout<<"enter the number of array elements: ";
+    cout<<"enter the size ";
     cin>>n;
 
-    cout<<"Enter the elements of array: ";
+    cout<<"Enter the elements of list: ";
     int arr[100];
     for(int i=0; i<n; i++)
     {
@@ -51,3 +50,4 @@ int main()
 
     getch();
 }
+
